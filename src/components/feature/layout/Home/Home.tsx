@@ -28,7 +28,7 @@ export const Home: FunctionComponent = () => {
         setOverlay(!overlay);
         //console.log(currentProduct);
         const checkList =  item.find((data:any)=>data.id === product.id);
-        console.log(checkList)
+        // console.log(checkList)
         if (checkList){
             dispatch(increment(product))
         }

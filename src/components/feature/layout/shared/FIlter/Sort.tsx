@@ -15,10 +15,10 @@ export const Sort: FunctionComponent = ({})=>{
     return(
         <div className='sort-section'>
             <Select onChange={(e)=>{
+               
                 dispatch(updateCurrency(e.target.value));
-                console.log(e.target.value);
             }}>
-                <option value="NGN">Filter</option>
+                <option value='NGN'>NGN</option>
                 { allC && allC.map((currency:any,key:any)=> <option key={key} value={currency}>{currency}</option>)}
                 
             </Select>

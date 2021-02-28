@@ -370,6 +370,10 @@ li{
         flex:8;
         overflow: scroll;
         padding: 20px;
+        @include mobile-phones{
+            overflow: scroll;
+            height: 300px;
+        }
     }
     & .cart-2{
         flex:3;
@@ -377,6 +381,9 @@ li{
         box-shadow: 0 -4px 12px rgba(51, 50, 50, 0.15);
         z-index: 1;
         padding: 20px;
+        @include mobile-phones{
+            position: relative;
+        }
     }
 
 }

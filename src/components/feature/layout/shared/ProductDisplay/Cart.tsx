@@ -61,7 +61,7 @@ export const Cart : FunctionComponent<CartProps> = ({currency,dataProduct,onClic
                                 <h3 className='price-total'>{getCurrencySymbol(currency)} {numberWithCommas(getTotaLprice())}</h3>
                             </div>
                             
-                           {items.length > 0 &&  <button>ADD TO CART</button>}
+                           {items.length > 0 &&  <button>PROCEED TO CHECKOUT</button>}
                         </div>
                         }
                     </div>

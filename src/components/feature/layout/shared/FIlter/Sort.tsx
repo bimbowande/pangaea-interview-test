@@ -18,7 +18,7 @@ export const Sort: FunctionComponent = ({})=>{
                 dispatch(updateCurrency(e.target.value));
                 console.log(e.target.value);
             }}>
-                <option>Filter</option>
+                <option value="NGN">Filter</option>
                 { allC && allC.map((currency:any,key:any)=> <option key={key} value={currency}>{currency}</option>)}
                 
             </Select>

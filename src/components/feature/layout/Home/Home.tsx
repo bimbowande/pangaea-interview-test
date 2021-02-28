@@ -56,7 +56,7 @@ export const Home: FunctionComponent = () => {
                 </div>
             </div>
 
-             <div className='container' style={{display:overlay ? 'block':'none'}}>
+             <div className={`beforeanime ${overlay && 'container'}` } style={{display:overlay ? 'block':'none'}}>
                 { currentProduct && <Cart  price={products} dataProduct={products}  currency={code}  onClick={()=>{setOverlay(!overlay)}}/>}
             </div> 
         </div>

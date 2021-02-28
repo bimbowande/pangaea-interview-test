@@ -214,6 +214,14 @@ li{
     }
 }
 
+
+
+
+.beforeanime{
+    width:3%;
+    backdrop-filter:blur(0);
+    top:30;
+}
 .container{
     position:fixed;
     width:100%;
@@ -222,6 +230,7 @@ li{
     top:0;
     background:rgba(205, 209, 206,.8);
     height:100%;
+    transition: all 900ms ease-in-out;
 }
 
 .change-overflow{

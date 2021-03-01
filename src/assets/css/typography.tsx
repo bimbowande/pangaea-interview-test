@@ -8,12 +8,6 @@ const headerText: CSS.Properties = {
 const paragraphText: CSS.Properties = {
     fontSize:'.9rem'
 }
-const container = {
-    width:'100%',
-    height:'100%',
-    border:'1px solid red'
-
-}
 
 export {
     headerText,paragraphText

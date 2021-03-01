@@ -5,7 +5,7 @@ type  SelectProps ={
     option:any;
 } 
 export const Select: FunctionComponent<SelectProps> = ({option})=>{
-    console.log('data',option)
+   
     return(
         
         <div className='form-data'>

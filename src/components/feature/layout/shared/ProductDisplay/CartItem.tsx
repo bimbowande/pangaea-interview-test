@@ -36,11 +36,11 @@ export const CartItem:FunctionComponent<CartProps> = ({ fullDetail,title,id,curr
                 
                 <div className='product-add-container'>
                     <div className='product-add'>
-                        <h3 onClick={()=>{
+                        <h3 className='cart-action' onClick={()=>{
                             dispatch(decrement(fullDetail))
                         }}>-</h3>  
                             <h3>{quantity}</h3> 
-                            <h3 onClick={()=>{
+                            <h3 className='cart-action' onClick={()=>{
                             dispatch(increment(fullDetail))
                         }}>+</h3>
                         

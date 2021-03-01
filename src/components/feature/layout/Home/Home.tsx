@@ -49,9 +49,9 @@ export const Home: FunctionComponent = () => {
             <div className='product-display'>
                 <div style={{overflow : overlay ? 'hidden':'scroll'}} className={`product-display-container`}>   
                 {
-                   products &&  products.map(
+                   products?.length > 0 ?  products.map(
                         (product:any,key:any) => <ProductCart key={key} AddToCart={()=>doAddToCart(product)} imgLink={product.image_url} name={product.title} price={product.price}/>
-                    )
+                    ) :'Loading...'
                 } 
                 </div>
             </div>
